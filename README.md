@@ -1,4 +1,7 @@
 # 🛒 SmartBuy Recommender Engine
+## 🌐 Live Demo
+
+[Launch SmartBuy Recommender](https://smartbuy-recommender-engine.streamlit.app/)
 
 A Hybrid Product Recommendation System built using **TF-IDF**, **Cosine Similarity**, **Popularity-Based Ranking**, and **Streamlit**.
 
