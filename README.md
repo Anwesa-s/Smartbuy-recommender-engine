@@ -1,95 +1,171 @@
-# SmartBuy Recommender Engine
+# 🛒 SmartBuy Recommender Engine
 
-## Day 1 Findings
+A Hybrid Product Recommendation System built using **TF-IDF**, **Cosine Similarity**, **Popularity-Based Ranking**, and **Streamlit**.
 
-- Dataset contains 1465 reviews.
-- Dataset contains 1351 unique products.
-- Dataset contains 1194 unique users.
-- No duplicate rows found.
-- Only 2 missing values in rating_count.
-- Average rating: ___
-- Most common category: ___
-- Most reviewed product: ___
+The system recommends products similar to a selected item by combining content similarity with product popularity to generate more relevant and practical recommendations.
 
-# Day 2 Summary
+---
 
-## Data Cleaning
+## 📌 Project Overview
 
-- Converted discounted_price to numeric.
-- Converted actual_price to numeric.
-- Converted discount_percentage to numeric.
-- Converted rating to numeric.
-- Converted rating_count to numeric.
-- Handled all missing values.
+SmartBuy Recommender Engine is a machine learning-powered recommendation system designed to help users discover relevant products from an Amazon product dataset.
 
-## Feature Engineering
+The project combines:
 
-Created:
+* Content-Based Filtering
+* Popularity-Based Ranking
+* Hybrid Recommendation Strategy
 
-1. discount_amount
-2. discount_ratio
-3. popularity_score
+to improve recommendation quality and user experience.
 
-## Output
+---
 
-Saved cleaned dataset as:
+## 🚀 Features
 
-cleaned_amazon.csv
+* Content-Based Product Recommendations
+* TF-IDF Text Vectorization
+* Cosine Similarity Search
+* Popularity-Based Ranking
+* Hybrid Recommendation System
+* Interactive Streamlit Dashboard
+* Product Metrics Display
+* Modern Recommendation Cards UI
+* Serialized Models using Pickle
 
-# Day 5 Summary
+---
 
-Built a Popularity-Based Recommendation System.
+## 📊 Dataset
 
-Features:
-- Top Product Recommendations
-- Category-Based Recommendations
-- Popularity Rankings
+Amazon Product Dataset
 
-Metrics Used:
-- Rating
-- Rating Count
-- Popularity Score
+Features used:
 
-# Day 6 Summary
+* Product Name
+* Category
+* Product Description
+* Rating
+* Rating Count
+* Discount Percentage
 
-Built a Hybrid Recommendation System.
+---
 
-Combined:
+## ⚙️ Project Workflow
 
-1. Content-Based Filtering
-2. Popularity-Based Filtering
+1. Data Cleaning
+2. Feature Engineering
+3. TF-IDF Vectorization
+4. Cosine Similarity Calculation
+5. Content-Based Recommendation
+6. Popularity Score Calculation
+7. Hybrid Recommendation Generation
+8. Model Serialization
+9. Streamlit Application Development
 
-Hybrid Score:
+---
 
-0.7 × Similarity Score
-+
-0.3 × Popularity Score
+## 🛠️ Tech Stack
 
-Benefits:
-- More relevant recommendations
-- More popular recommendations
-- Better recommendation quality
+### Programming Language
 
-# Day 7 Summary
+* Python
 
-## Objective
+### Libraries
 
-Evaluate the performance and behavior of the recommendation system.
+* Pandas
+* NumPy
+* Scikit-Learn
+* Streamlit
+* Matplotlib
+* Seaborn
 
-## Analyses Performed
+### Model Persistence
 
-- Top Rated Product Analysis
-- Rating vs Rating Count Analysis
-- Correlation Analysis
-- Recommendation Quality Evaluation
+* Pickle
 
-## Key Findings
+### Version Control
 
-- Product popularity is strongly associated with review count.
-- Most products maintain ratings between 3.5 and 4.5.
-- Hybrid recommendations provide a better balance between relevance and popularity.
-- Content-based similarity works effectively using product descriptions and category information.
+* Git
+* GitHub
 
-## Outcome
+---
 
-The evaluation confirmed that the Hybrid Recommendation System produces relevant and practical product recommendations while maintaining recommendation diversity.
+## 📁 Project Structure
+
+```text
+SmartBuy Recommender Engine/
+│
+├── assets/
+├── data/
+├── models/
+├── notebooks/
+├── reports/
+├── utils/
+│   └── recommender.py
+│
+├── app.py
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
+
+---
+
+## 📸 Application Screenshots
+
+
+
+### Home Page
+
+![Home Page](reports/Screenshots/01_home_page.png)
+
+### Product Details
+
+![Product Details](reports/Screenshots/04_product_details.png)
+
+### Recommendations
+
+![Recommendations](reports/Screenshots/05_recommendations.png)
+
+---
+
+## 💻 Installation
+
+Clone the repository:
+
+```bash
+git clone <your-repository-url>
+```
+
+Navigate to the project folder:
+
+```bash
+cd smartbuy-recommender-engine
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the application:
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 🔮 Future Improvements
+
+* Sentence Transformer Embeddings
+* FAISS Similarity Search
+* Collaborative Filtering
+* Recommendation Explainability
+* Cloud Deployment
+
+---
+
+## 👩‍💻 Author
+
+Anwesa Sahu
